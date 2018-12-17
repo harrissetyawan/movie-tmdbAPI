@@ -18,18 +18,18 @@ class Welcome extends CI_Controller {
 			
 				<div class="col-sm-4">	
 					<div class="card ">
-					<div class="poster"><img src ="http://image.tmdb.org/t/p/w185'.$film->poster_path.'">
+						<div class="poster"><img src ="http://image.tmdb.org/t/p/w185'.$film->poster_path.'">
 
-					</div>	
+						</div>	
 							<div class="details">
-							<a href="welcome/insertdb?id='.$film->id.'" class="btn btn-outline-info mb-3" style="width:70px; position:relative;">Add</button>
-								<a href="index.php/welcome/detail?id='.$film->id.'">
-									<h2>'.$film->title.'</h2></a>
+								<a href="welcome/insertdb?id='.$film->id.'" class="btn btn-outline-info mb-3" style="width:70px; position:relative;">Add</button>
+									<a href="index.php/welcome/detail?id='.$film->id.'">
+										<h2>'.$film->title.'</h2></a>
 										<span class="badge badge-pill badge-light">'.$film->vote_average.'</span>
 								<div class="info">
 									<p>'.$film->overview.'</p>
+								</div>
 						</div>
-					</div>
 				  </div>
 				</div>
 				';
@@ -122,8 +122,8 @@ class Welcome extends CI_Controller {
 						</div>
 						
 							<div class="details">
-							<a href="welcome/insertdb?id='.$film->id.'" class="btn btn-outline-info mb-3" style="width:70px; position:relative;">Add</button>
-								<a href="detail?id='.$film->id.'"><h2>'.$film->title.'</h2></a>
+								<a href="welcome/insertdb?id='.$film->id.'" class="btn btn-outline-info mb-3" style="width:70px; position:relative;">Add</button>
+									<a href="detail?id='.$film->id.'"><h2>'.$film->title.'</h2></a>
 										<span class="badge badge-pill badge-light">'.$film->vote_average.'</span>
 								<div class="info">
 									<p>'.$film->overview.'</p>
